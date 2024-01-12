@@ -1,5 +1,6 @@
 body {
     margin-top: 100px;
+    background-color: beige;
 }
 
 ul li {
@@ -10,8 +11,16 @@ ul li {
 
 h1 {
     text-align: center;
+    color: brown;
 }
 
 input {
     border: none;
+    
+}
+div {
+    color: brown;
+}
+li {
+    color: black;
 }
