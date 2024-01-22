@@ -24,7 +24,25 @@ const Home = () => {
 
             })
             .catch(error => {
-                console.log(error);
+                if (error.message == 404);
+				fetch('https://playground.4geeks.com/apis/fake/todos/user/carlosrodriguezR', {
+            method: 'POST',
+			body: JSON.stringify([]), 
+            headers: {
+                "Content-Type": "application/json"
+            }
+        })
+		.then(resp => {
+			if (!resp.ok) throw Error('la response no ok')
+			return resp.json()
+		})
+		.then(data => { 
+			console.log(data)
+		})
+		.catch(error => {
+			console.log(error);
+		});
+
             });
     }, [])
 
